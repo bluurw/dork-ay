@@ -23,7 +23,6 @@ def get_useragent():
     return f"{one_set[random.randint(0, len(one_set)-1)]} {two_set[random.randint(0, len(two_set)-1)]} {three_set[random.randint(0, len(three_set)-1)]}"
 
 
-
 def get_useragent_experimental(file='useragent.txt'):
     with open(file, 'r') as f:
         lines = f.readlines()
