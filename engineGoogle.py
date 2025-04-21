@@ -9,7 +9,7 @@ def request(term, results, lang, start_index, proxies, timeout, safe, ssl_verify
     r = requests.get(
         url='https://www.google.com/search',
         headers={
-            'User-Agent': ua.get_useragent(),
+            'User-Agent': ua.get_useragent_experimental(),
             'Accept': '*/*'
         },
         params={
