@@ -26,4 +26,4 @@ def get_useragent():
 def get_useragent_experimental(file='useragent.txt'):
     with open(file, 'r') as f:
         lines = f.readlines()
-    return f'{lines[random.randint(0, len(lines)-1)]}'
+    return f'{lines[random.randint(0, len(lines)-1)].strip()}'
