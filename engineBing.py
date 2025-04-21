@@ -36,7 +36,7 @@ def request(term, results, lang, start_index, proxies, timeout, safe, ssl_verify
 
 
 ## fdfdfdfdfddf
-def search(param, results_num=110, lang='en', start_index=1, proxies=None, timeout=5, details=False, safe='off', ssl_verify=None, region=None, unique=True):
+def search(param, results_num, lang='en', start_index=1, proxies=None, timeout=5, details=False, safe='off', ssl_verify=None, region=None, unique=True):
     
     proxies = {'https': proxies, 'http': proxies} if proxies and (proxies.startswith('https') or proxies.startswith('http')) else None
 
@@ -85,6 +85,6 @@ def search(param, results_num=110, lang='en', start_index=1, proxies=None, timeo
 
 # Exemplo de uso
 '''
-for result in search('intitle:"index of"'):
+for result in search('intitle:"index of"', 85):
     print(result)
 '''
